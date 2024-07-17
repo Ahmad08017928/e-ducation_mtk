@@ -101,18 +101,7 @@ function uploadFile(file){
     http.onabort = () => li.remove()
 }
 // find icon for file
-   function redirectIfMobile() {
-     var width = window.innerWidth;
-     console.log("Lebar layar: " + width + " piksel");
-
-     // Angka 768 piksel menentukan batasan lebar layar di bawahnya pengguna akan diarahkan ke halaman perbaikan
-     if (width < `1296px`) {
-       console.log("Pengguna akan diarahkan ke halaman perbaikan.");
-       window.location.href = "404.html";
-     }
-   }
-
-   // Jalankan fungsi saat halaman dimuat dan saat ukuran layar berubah
-   window.onload = redirectIfMobile;
-   window.onresize = redirectIfMobile;
-
+function iconSelector(type){
+    var splitType = (type.split('/')[0] == 'application') ? type.split('/')[1] : type.split('/')[0];
+    return splitType + '.png'
+}
