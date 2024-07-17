@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page Materi</title>
+    <!-- Style Font -->
+    <link href="https://fonts.googleapis.com/css?family=Inter" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Signika" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Sansita" rel="stylesheet" />
+    <!-- Tailwind cdn link -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <!-- Css pages for materi -->
+    <link rel="stylesheet" href="style/style-user.css" />
+  </head>
+  <body>
+    <!-- Start Navigator -->
+    <div class="hero">
+      <nav id="mainNavbar">
+        <a href="user.html" class="logo">Math Class</a>
+        <ul class="nav-link">
+          <li><a href="#materi">Materi</a></li>
+          <li><a href="p.tugas.html">pengumpulan tugas</a></li>
+          <li><a href="tugas.html">Tugas</a></li>
+          <li><a href="nilai.html">Nilai</a></li>
+        </ul>
+        <img src="Assets/user.jpg" alt="user" class="user-pic" onclick="toggleMenu()" />
+
+        <div class="sub-menu-wrap" id="subMenu">
+          <div class="sub-menu">
+            <div class="user-info">
+              <img src="Assets/user.jpg" alt="user" class="user" />
+              <h3>James Aldrino</h3>
+            </div>
+            <hr />
+            <a href="" class="sub-menu-link">
+              <img src="Assets/profile.png" alt="profile" />
+              <p>Edit Profile</p>
+              <span>></span>
+            </a>
+            <a href="index.html" class="sub-menu-link">
+              <img src="Assets/logout.png" alt="logout" />
+              <p>Logout</p>
+              <span>></span>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- End Navigator -->
+    <!-- Start page Section -->
+    <section id="home">
+      <div class="rumah">
+        <img src="assets/materi-assets/teach.png" alt="teach" class="content-img" />
+        <h1 class="content-judul">Explore the World of Knowledge Effortlessly</h1>
+      </div>
+    </section>
+    <!-- End page Section -->
+    <section class="flex items-center justify-center min-h-screen bg-gray-100 materi" id="materi">
+      <div class="judul-1">
+        <h1>Materi</h1>
+      </div>
+      <div class="relative inline-block text-left" style="margin-top: -300px; margin-left: -880px; z-index: 10px; position: absolute">
+        <div>
+          <button
+            type="button"
+            class="flex justify-between custom-dropdown-width rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+            id="menu-button-1"
+            aria-expanded="true"
+            aria-haspopup="true">
+            Semester 1
+            <svg class="-mr-1 ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+            </svg>
+          </button>
+        </div>
+
+        <div
+          id="dropdown-menu-1"
+          class="hidden origin-top-right absolute right-0 mt-2 custom-dropdown-width rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none"
+          role="menu"
+          aria-orientation="vertical"
+          aria-labelledby="menu-button-1"
+          tabindex="-1"
+          style="padding: 20px">
+          <div class="py-1" role="none">
+            <!-- Dropdown items -->
+            <a href="#" class="block w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem" data-file="modul-mtk.pdf">Matematika</a>
+            <a href="#" class="block w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem" data-file="modul-fisika.pdf">Fisika</a>
+            <a href="#" class="block w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem" data-file="modul-kimia.pdf">Kimia</a>
+            <a href="#" class="block w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem" data-file="modul-biologi.pdf">Biologi</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="relative inline-block text-left" style="margin-top: -300px; margin-left: 880px">
+        <div>
+          <button
+            type="button"
+            class="flex justify-between custom-dropdown-width rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+            id="menu-button-2"
+            aria-expanded="true"
+            aria-haspopup="true">
+            Semester 2
+            <svg class="-mr-1 ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+            </svg>
+          </button>
+        </div>
+
+        <div
+          id="dropdown-menu-2"
+          class="hidden origin-top-right absolute right-0 mt-2 custom-dropdown-width rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none"
+          role="menu"
+          aria-orientation="vertical"
+          aria-labelledby="menu-button-2"
+          tabindex="-1"
+          style="padding: 20px">
+          <div class="py-1" role="none">
+            <!-- Dropdown items -->
+            <a href="#" class="block w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem" data-file="modul-mtk.pdf">Matematika</a>
+            <a href="#" class="block w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem" data-file="modul-fisika.pdf">Fisika</a>
+            <a href="#" class="block w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem" data-file="modul-kimia.pdf">Kimia</a>
+            <a href="#" class="block w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem" data-file="modul-biologi.pdf">Biologi</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="persegi-panjang-2">
+      <img src="assets/materi-assets/vector-2.png" alt="vector" class="vector" />
+      <p class="font">Pendidikan adalah kunci membuka pintu masa depan. Teruslah belajar dan percaya pada kemampuanmu!</p>
+    </div>
+    <secttion>
+      <div class="manfaat">
+        <img src="assets/materi-assets/teknologi.jpeg" alt="teknologi" class="img-content" />
+        <h2 class="judul-content">Manfaat Matematika bagi teknologi</h2>
+        <p class="font-content">
+          Matematika memiliki peran fundamental dalam teknologi, membantu memecahkan masalah kompleks, mendukung pengembangan algoritma, analisis data besar, desain dan simulasi produk, serta meningkatkan kecerdasan buatan dan teknologi
+          komunikasi. Dengan demikian, matematika menjadi fondasi esensial yang memungkinkan kemajuan dan inovasi teknologi modern.
+        </p>
+      </div>
+    </secttion>
+    <!-- End page Section -->
+    <!-- footer -->
+    <footer>
+      <div class="bagian-akhir">
+        <p>&copy; 2024 Math Class. All rights reserved. <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+      </div>
+    </footer>
+    <!-- end footer -->
+    <script src="setting/script.js"></script>
+  </body>
+</html>

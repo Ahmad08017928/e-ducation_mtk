@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pages Nilai</title>
+    <link href="https://fonts.googleapis.com/css?family=Inria Serif" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=JetBrains Mono" rel="stylesheet" />
+    <link rel="stylesheet" href="style/style-user.css" />
+  </head>
+  <body>
+    <!-- Start Navigator -->
+    <div class="hero">
+      <nav id="mainNavbar">
+        <a href="user.html" class="logo">Math Class</a>
+        <ul class="nav-link">
+          <li><a href="materi.html">Materi</a></li>
+          <li><a href="tugas.html">Tugas</a></li>
+          <li><a href="#Home">Nilai</a></li>
+          <li><a href="p.tugas.php">pengumpulan tugas</a></li>
+        </ul>
+        <img src="Assets/user.jpg" alt="user" class="user-pic" onclick="toggleMenu()" />
+
+        <div class="sub-menu-wrap" id="subMenu">
+          <div class="sub-menu">
+            <div class="user-info">
+              <img src="Assets/user.jpg" alt="user" class="user" />
+              <h3>James Aldrino</h3>
+            </div>
+            <hr />
+            <a href="" class="sub-menu-link">
+              <img src="Assets/profile.png" alt="profile" />
+              <p>Edit Profile</p>
+              <span>></span>
+            </a>
+            <a href="index.html" class="sub-menu-link">
+              <img src="Assets/logout.png" alt="logout" />
+              <p>Logout</p>
+              <span>></span>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- End navbar -->
+    <section id="Home">
+      <div class="home-page">
+        <p class="text-1"><a href="#" style="color: #000; text-decoration: none">Ditugaskan</a></p>
+        <p class="text-2"><a href="#" style="color: #000; text-decoration: none"> Belum diserahkan</a></p>
+        <p class="text-3"><a href="#" style="color: #000; text-decoration: none">Selesai</a></p>
+      </div>
+      <div class="select-menu" id="dropdown-1">
+        <div class="select-btn" id="select-btn-1">
+          <span id="text-1">Tidak ada batas waktu</span>
+          <ion-icon name="chevron-down-outline" class="icon-arrow"></ion-icon>
+        </div>
+        <ul class="list">
+          <li class="options" style="--i: 1">
+            <span class="option-text">HTML</span>
+          </li>
+          <li class="options" style="--i: 2">
+            <span class="option-text">CSS</span>
+          </li>
+          <li class="options" style="--i: 3">
+            <span class="option-text">JavaScript</span>
+          </li>
+          <li class="options" style="--i: 4">
+            <span class="option-text">Golang</span>
+          </li>
+          <li class="options" style="--i: 5">
+            <span class="option-text">Java</span>
+          </li>
+          <li class="options" style="--i: 6">
+            <span class="option-text">Python</span>
+          </li>
+          <li class="options" style="--i: 7">
+            <span class="option-text">Figma</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="select-menu" id="dropdown-2">
+        <div class="select-btn" id="select-btn-2">
+          <span id="text-2">Minggu ini</span>
+          <ion-icon name="chevron-down-outline" class="icon-arrow"></ion-icon>
+        </div>
+        <ul class="list">
+          <li class="options" style="--i: 1">
+            <span class="option-text">HTML</span>
+          </li>
+          <li class="options" style="--i: 2">
+            <span class="option-text">CSS</span>
+          </li>
+          <li class="options" style="--i: 3">
+            <span class="option-text">JavaScript</span>
+          </li>
+          <li class="options" style="--i: 4">
+            <span class="option-text">Golang</span>
+          </li>
+          <li class="options" style="--i: 5">
+            <span class="option-text">Java</span>
+          </li>
+          <li class="options" style="--i: 6">
+            <span class="option-text">Python</span>
+          </li>
+          <li class="options" style="--i: 7">
+            <span class="option-text">Figma</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="select-menu" id="dropdown-3">
+        <div class="select-btn" id="select-btn-3">
+          <span id="text-3">Minggu Kemarin</span>
+          <ion-icon name="chevron-down-outline" class="icon-arrow"></ion-icon>
+        </div>
+        <ul class="list">
+          <li class="options" style="--i: 1">
+            <span class="option-text">HTML</span>
+          </li>
+          <li class="options" style="--i: 2">
+            <span class="option-text">CSS</span>
+          </li>
+          <li class="options" style="--i: 3">
+            <span class="option-text">JavaScript</span>
+          </li>
+          <li class="options" style="--i: 4">
+            <span class="option-text">Golang</span>
+          </li>
+          <li class="options" style="--i: 5">
+            <span class="option-text">Java</span>
+          </li>
+          <li class="options" style="--i: 6">
+            <span class="option-text">Python</span>
+          </li>
+          <li class="options" style="--i: 7">
+            <span class="option-text">Figma</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- Javascript -->
+    <script src="setting/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>
